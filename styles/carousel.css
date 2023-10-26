@@ -1,0 +1,107 @@
+.carousel-wrapper {
+    position: relative;
+    margin: auto;
+    height: 50vh;
+    width: 80%;
+}
+.carousel-viewport {
+    position: relative;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+
+}
+
+.carousel {
+    position: relative;
+    height:100%;
+    width:100%;
+}
+
+.carousel-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+
+}
+
+.scroll-left {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 10px;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    transform: rotate(45deg);
+    z-index: 10;
+
+}
+
+.scroll-right {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: 10px;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    transform: rotate(-45deg);
+    z-index: 10;
+}
+
+.scroll-right:hover, .scroll-left:hover {
+    cursor: pointer;
+    color:black;
+}
+
+.carousel img{
+    height: 100%;
+    margin: auto;
+    position:relative;
+    display: block;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+.example {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+#project_link {
+    display: block;   
+    margin: auto;
+    width: fit-content;
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+#project_button {
+    margin: auto;
+    background-color: #fc6a6a;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+#project_button:hover {
+    cursor: pointer;
+    background-color: #fc5353;
+}
+
+#project_button:active {
+    background-color: #fd4141;
+}

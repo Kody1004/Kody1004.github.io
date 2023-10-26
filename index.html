@@ -5,33 +5,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Kody's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"   />
-    <script src="portfolio.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css"   />
+    <link rel="stylesheet" type="text/css" href="/styles/frontpage.css"   />
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.152.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.152.1/examples/jsm/"
+        }
+      }
+    </script>
 </head>
 
 <body>
-    <div>
+    <div id="threejs-canvas" class="blur">
+
+    </div>
         <nav>
             <div id="name">
                 Kody
             </div>
             <div id="navigation-links">
-                <a class="bold" href="">About</a>
-                <a class="bold" href="">Projects</a>
-                <a class="bold" href="">Contact</a>
+                <a class="bold" href="index.html">About</a>
+                <a class="bold" href="./portfolio.html">Projects</a>
+                <a class="bold pop-out-button" href="">Contact</a>
             </div>
         </nav>
-       
-    </div>
     <div class="header">
-        <div>
+       
+        <div id = "hero-message" class="hero-message">
             <h1>Hi, I'm Kody</h1>
-        </div>
-        <div class="hero-message">
             <h3>I'm a 10th grader at Staten Island Tech. I enjoy making 3d models, coding, and sports</h3>
         </div>
-    </div>
+        <button id = "see-more"class="hero-button">Show More</button>
+        <div class="header-tab">
+            <div class ="arrow_container">
+                <a href="/#bio"><div class="arrow"></div></a>
+            </div>
+        </div>
         
+    </div>
+    <div class="biography">
+        <div class="biography_container" id="bio">
+            <img class= "bio-img"src="/Images/IMG_0772.JPG">
+            <div class="description"><p>Hi, my name is Kody. I enjoy doing many activities including sports, coding, 3D modeling and many more. 
+                Here is my portfolio website containing all the projects I've done in the past.</p></div>
+        </div>
+
+    </div>
+    
+
+    <script type="module" src="/script/portfolio.js"></script>
+    <div class="footer">
+        <hr>
+        &copy; 2023 by Kody Ng
     </div>
 </body>
 
